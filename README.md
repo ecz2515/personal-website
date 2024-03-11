@@ -1,4 +1,4 @@
-# [Your Name]'s Personal Website
+# Evan Chen's Personal Website
 
 Welcome to the source code repository for my personal website!
 
