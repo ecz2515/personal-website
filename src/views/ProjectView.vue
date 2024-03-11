@@ -1,37 +1,34 @@
 <template>
-    <p class="text-center mb-3 dark:text-blue-300">Projects from <font-awesome-icon icon="fa-brands fa-github" />
-    </p>
+    <p class="text-center mb-3 dark:text-blue-300">Here's some stuff I've worked on...</p>
     <div class="max-h-[50vh] overflow-auto sm:w-4/12 mx-auto">
-        <Loader v-if="loading" />
-        <div v-if="error" class="text-red-500 text-center">{{ error }}</div>
-        <div v-for="(project, index) in projects" :key="project.id">
-            <a :href="project.html_url" target="_bl">
-                <div class="bg-blue-300 mb-4 p-2 rounded-md shadow-md">
-                    <h2 class="font-bold text-xl">{{ ++index }} {{ project.name }}</h2>
-                    <p>{{ project.description }}</p>
-                </div>
+        <!-- Static projects list -->
+        <div class="bg-blue-300 mb-4 p-2 rounded-md shadow-md" v-for="(project, index) in projects" :key="index">
+            <a :href="project.html_url" target="_blank">
+                <h2 class="font-bold text-xl">{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
             </a>
         </div>
     </div>
 </template>
+
 <script setup>
-import { ref, onMounted } from 'vue';
-import Loader from '../components/Loader.vue';
-
-const projects = ref([]);
-const loading = ref(false);
-const error = ref(null);
-
-onMounted(async () => {
-    try {
-        loading.value = true;
-        const res = await fetch('https://api.github.com/users/saileshrijal/repos');
-        projects.value = await res.json();
-        loading.value = false;
-    } catch (ex) {
-        error.value = ex;
-        loading.value = false;
-    }
-});
-
+// Removed the dynamic loading logic
+const projects = [
+    {
+        id: 1,
+        name: 'Intelligent Digit Interpreter',
+        description: 'An interactive ML application designed to recognize handwritten digits in real-time.',
+        html_url: 'https://github.com/yourusername/project-1'
+    },
+    {
+        id: 2,
+        name: 'Note to Self',
+        description: 'A React Native application designed to act as a proactive tool during emotional crises.',
+        html_url: 'https://github.com/yourusername/project-2'
+    },
+];
 </script>
+
+<style scoped>
+/* Add any additional styling here */
+</style>

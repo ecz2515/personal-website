@@ -1,71 +1,52 @@
-# Vue Tailwind Portfolio
+# [Your Name]'s Personal Website
 
-Fancy and minimal portfolio made on VUE JS and Tailwind CSS.
+Welcome to the source code repository for my personal website!
+
+## Overview
+
+This website is built using [Vue.js](https://vuejs.org/), a progressive JavaScript framework for building user interfaces. The design is responsive, ensuring the site looks great on devices of all sizes, from phones to desktops.
 
 ## Features
 
-- Light/dark mode toggle
-- Fetched Projects from github repositories
-- Responsive
+- **Home**: A landing page that introduces visitors to the site.
+- **About Me**: Information about my background, skills, and interests.
+- **Projects**: A showcase of my professional and personal projects.
+- **Resume**: A link to my resume.
 
-## Run Locally
+## Technologies Used
 
-Clone the project
+- **Frontend**: Vue.js, Tailwind CSS for styling, and Vue Router for navigation.
+- **Backend** (if applicable): Node.js with Express for handling API requests.
+- **Deployment**: Hosted on GitHub Pages/Netlify/Vercel.
 
-```bash
-  git clone https://github.com/saileshrijal/vue-tailwind-portfolio
-```
+## Running Locally
 
-Go to the project directory
+To get a local copy up and running, follow these simple steps.
 
-```bash
-  cd vue-tailwind-portfolio
-```
+### Prerequisites
 
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
+- Node.js
+- npm
 
 ```bash
-  npm run dev
-```
+# Check Node.js installation
+node --version
 
-Build the project
+# Check npm installation
+npm --version
 
-```bash
-  npm run build
-```
+# Install npm globally
+npm install npm@latest -g
 
-Build project is located on dist directory
+# Clone the repository
+git clone https://github.com/ecz2515/personal-website
 
-## Screenshots
+# Navigate to the project directory
+cd personal-website
 
-![Home Page - Dark Mode](https://user-images.githubusercontent.com/88402075/235314265-6fa9c022-7061-44c2-8087-17d2b673570f.png)
 
-![About Page - Dark Mode](https://user-images.githubusercontent.com/88402075/235314266-b51998c9-f036-4fb0-883b-13afd6329e54.png)
+# Install dependencies
+npm install
 
-![Project Page - Dark Mode](https://user-images.githubusercontent.com/88402075/235314268-ed686a64-75c1-4aaa-807c-fedb6687e449.png)
-
-![Home Page - Light Mode](https://user-images.githubusercontent.com/88402075/235314269-a7ec5d07-7a75-4a78-a743-644877c3e0da.png)
-
-![About Page - Light Mode](https://user-images.githubusercontent.com/88402075/235314271-323a14b1-fa17-4474-8527-b139fee9b5f7.png)
-
-![Project Page - Light Mode](https://user-images.githubusercontent.com/88402075/235314262-57c48c9e-9200-48c1-8b54-ec5794811b7b.png)
-
-## 🚀 About Me
-
-I'm a full stack developer...
-
-## 🔗 Links
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://saileshrijal.com.np/)
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saileshrijal/)
-
-## Demo
-
-Link: https://saileshrijal.github.io/
+# Start the development server
+npm run serve
